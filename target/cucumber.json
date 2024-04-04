@@ -1,0 +1,93 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-03-30T18:15:13.957Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:53071/devtools/browser/781258e6-fd45-4cf6-8205-662fe9dcdf93\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027DESKTOP-F2NSHHI\u0027, ip: \u0027172.29.160.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002719.0.1\u0027\nDriver info: driver.version: ChromeDriver\r\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.\u003cinit\u003e(NettyWebSocket.java:104)\r\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)\r\n\tat org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:127)\r\n\tat org.openqa.selenium.devtools.Connection.\u003cinit\u003e(Connection.java:77)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)\r\n\tat java.base/java.util.Optional.map(Optional.java:260)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.\u003cinit\u003e(ChromiumDriver.java:122)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:104)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:91)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:46)\r\n\tat utils.CommonMethods.openBrowserAndLaunchApplication(CommonMethods.java:32)\r\n\tat steps.Hooks.preCondition(Hooks.java:12)\r\n",
+              "duration": 2768134200,
+              "status": "failed"
+            },
+            "match": {
+              "location": "steps.Hooks.preCondition()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Valid admin login",
+        "description": "",
+        "id": "login-functionality;valid-admin-login",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)\" because \"ts\" is null\r\n\tat utils.CommonMethods.takeScreenshot(CommonMethods.java:87)\r\n\tat steps.Hooks.postCondition(Hooks.java:19)\r\n",
+              "duration": 11537800,
+              "status": "failed"
+            },
+            "match": {
+              "location": "steps.Hooks.postCondition(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 999400,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user enters valid username and valid password",
+            "match": {
+              "location": "steps.LoginSteps.user_enters_valid_username_and_valid_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "steps.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user is successfully logged in",
+            "match": {
+              "location": "steps.LoginSteps.user_is_successfully_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sprint1"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@tc1101"
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]

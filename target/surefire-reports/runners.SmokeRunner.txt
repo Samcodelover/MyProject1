@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: runners.SmokeRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 4.459 s <<< FAILURE! -- in runners.SmokeRunner
+Login functionality.Valid admin login -- Time elapsed: 3.164 s <<< ERROR!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:53071/devtools/browser/781258e6-fd45-4cf6-8205-662fe9dcdf93
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-F2NSHHI', ip: '172.29.160.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:104)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:127)
+	at org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:124)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46)
+	at utils.CommonMethods.openBrowserAndLaunchApplication(CommonMethods.java:32)
+	at steps.Hooks.preCondition(Hooks.java:12)
+
+Login functionality.Valid admin login -- Time elapsed: 3.170 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "ts" is null
+	at utils.CommonMethods.takeScreenshot(CommonMethods.java:87)
+	at steps.Hooks.postCondition(Hooks.java:19)
+
